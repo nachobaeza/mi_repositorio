@@ -1,12 +1,25 @@
-/*hola que tal*/
-.miestilo {
-    background-color: black;
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-@media (max-width:992px) {
-    background-color: red;
+#image-gallery .modal-footer{
+  display: block;
 }
 
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footeraparte{
+    background-color: #FF7A47;
+  position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    background-image: linear-gradient(to bottom, #FF7A47, black);
+}
 
 .Form {
 
@@ -21,7 +34,7 @@ img {
 
 
 
-main {
+.main {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: 300px 300px 300px;
@@ -31,15 +44,13 @@ main {
 }
 
 
-.contactanosimg{
+.contactanosimg {
     width: 600px;
     height: 450px;
 }
 
 
-body {
-    height: 100vh;
-}
+
 
 
 ul {
@@ -67,12 +78,6 @@ li a {
 
 }
 
-li a:hover {
-    opacity: 0;
-    font-size: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
 
 
 
@@ -117,14 +122,12 @@ a {
 }
 
 .hijo {
+     text-decoration:none;
     background-color: black;
     width: 150px;
     height: 50px;
-       animation: fadeIn;
-    animation-duration: 2s;
-
+   
 }
-
 
 
 .div {
@@ -132,15 +135,9 @@ a {
     margin-right: 40px;
 }
 
-.nosotros {
-    margin: 100px;
-    border: 100px;
-    align-content: flex-start;
-}
 
-.body {
-    overflow-y: hidden;
-}
+
+
 
 .imagen2 {
     display: flex;
@@ -191,40 +188,12 @@ a {
 }
 
 .h1__padre {
-    width: 1200px;
+    width: auto;
     background-color: black;
     display: flex;
 
 }
-@media (min-width: 576px) { 
-    .h1__padre{
-        max-width: 540px;
-        background-color: aqua;
-    }
-}
 
-
-@media (min-width: 768px) { 
-    .h1__padre{ max-width: 720px;
-        background-color: red;
-        
-    }
-}
-
-
-@media (min-width: 992px) {
-    .h1__padre{
-        max-width: 960px;
-        background-color: yellow;
-    }
-}
-
-
-@media (min-width: 1200px) { 
-    .h1__padre{max-width: 1140px;
-        background-color: black;
-    }
-}
 
 
 
@@ -246,12 +215,13 @@ a {
 
 .footer__padre {
     background-color: #FF7A47;
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    margin-top: 100px;
+  margin-top: 10px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
     background-image: linear-gradient(to bottom, #FF7A47, black);
-    margin-right: 30px;
+   
+    
 
 }
 
@@ -264,17 +234,27 @@ a {
 }
 
 .nosotros {
-    margin: 100px;
-    border: 100px;
-    margin-left: 35%;
+   width: 400px;
+    height: 250px;
+    align-items: center;
+    display:block;
+margin:auto;
+    border-radius: 10px;
+    border: 20px;
+
+    
+    
+    
+    
 }
 
 
 .coleccion:hover {
--webkit-transform: rotateY(180deg);
--webkit-transform-style: preserve-3d;
-transform: rotateY(180deg);
-transform-style: preserve-3d;}
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
 
 
 .imagencontacto {
@@ -291,15 +271,15 @@ transform-style: preserve-3d;}
     margin-top: 10px;
 }
 
-
+.titulos2{
+   justify-content: flex-end;
+}
 
 .titulos {
     text-align: center;
 }
 
-.imagendescuentos {
-    margin-left: 50%;
-}
+
 
 .formulario {
     margin-top: 30px;
@@ -309,5 +289,4 @@ transform-style: preserve-3d;}
 .main {
     display: grid;
     justify-content: center;
-    }
-
+}
